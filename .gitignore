@@ -1,0 +1,5 @@
+/.vscode
+/_deps
+/build
+/CMakeFiles
+big_int.exe
