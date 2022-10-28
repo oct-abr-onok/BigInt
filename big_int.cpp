@@ -340,7 +340,7 @@ BigInt &BigInt::operator/=(const BigInt &sx)
      * ARGUMENTS: BigInt value to divide the current one.
      */
     if (sx == BigInt(0))
-        throw std::invalid_argument("Division by zero!!!");
+        throw std::domain_error("Division by zero!!!");
 
     BigInt &res(*this), mem, this_mem = *this, carry_mem, x = sx;
     res = BigInt();
